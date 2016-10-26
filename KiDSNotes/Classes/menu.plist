@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menuId</key>
+		<string>profileScene</string>
+		<key>icon</key>
+		<string>accountIcon</string>
+		<key>title</key>
+		<string>аккаунт</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>лента</string>
+		<key>menuId</key>
+		<string>topScene</string>
+		<key>icon</key>
+		<string>feedLineIcon</string>
+	</dict>
+	<dict>
+		<key>menuId</key>
+		<string>friendsScene</string>
+		<key>icon</key>
+		<string>friendsIcon</string>
+		<key>title</key>
+		<string>друзья</string>
+	</dict>
+	<dict>
+		<key>menuId</key>
+		<string>messagesScene</string>
+		<key>icon</key>
+		<string>messagesIcon</string>
+		<key>title</key>
+		<string>сообщения</string>
+	</dict>
+	<dict>
+		<key>menuId</key>
+		<string>notesScene</string>
+		<key>icon</key>
+		<string>notesIcon</string>
+		<key>title</key>
+		<string>заметки</string>
+	</dict>
+	<dict>
+		<key>menuId</key>
+		<string>settingsScene</string>
+		<key>icon</key>
+		<string>settingsIcon</string>
+		<key>title</key>
+		<string>настройки</string>
+	</dict>
+</array>
+</plist>

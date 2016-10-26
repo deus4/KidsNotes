@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IKSettingsTableViewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyC-FU-wTc">
+                    <rect key="frame" x="0.0" y="0.0" width="222" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-W2-8aL">
+                            <rect key="frame" x="14" y="13" width="29" height="15"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="AaH-W2-8aL" firstAttribute="leading" secondItem="kyC-FU-wTc" secondAttribute="leading" constant="14" id="bTS-Jj-6Vv"/>
+                        <constraint firstItem="AaH-W2-8aL" firstAttribute="centerY" secondItem="kyC-FU-wTc" secondAttribute="centerY" id="q9d-Tb-9dN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kyC-FU-wTc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="02G-Bl-y3l"/>
+                <constraint firstItem="kyC-FU-wTc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MO2-Wo-jRK"/>
+                <constraint firstAttribute="trailing" secondItem="kyC-FU-wTc" secondAttribute="trailing" id="PFl-Mj-a6i"/>
+                <constraint firstAttribute="bottom" secondItem="kyC-FU-wTc" secondAttribute="bottom" id="zQj-a6-LRg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="settingTitleLabel" destination="AaH-W2-8aL" id="dzb-Fx-OdY"/>
+            </connections>
+            <point key="canvasLocation" x="495" y="326.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Odq-1o-7b3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6fs-ei-egY">
+            <objects>
+                <navigationController storyboardIdentifier="openCamera" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Odq-1o-7b3" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E9m-Tn-oGY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O9K-vL-FTJ" kind="relationship" relationship="rootViewController" id="OQ3-I5-5Cf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgT-rg-asM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572.5" y="3272.5"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="6k7-oQ-F4a">
+            <objects>
+                <viewController id="O9K-vL-FTJ" customClass="IKKNCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xxf-xx-qOI"/>
+                        <viewControllerLayoutGuide type="bottom" id="VIP-1x-foW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rom-XB-WDq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Камера" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U85-Bb-t19">
+                                <rect key="frame" x="150" y="31" width="73" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Np4-9q-0wa" customClass="PreviewView">
+                                <rect key="frame" x="0.0" y="67" width="375" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-Vp-Nz1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="6tc-Vp-Nz1" firstAttribute="top" secondItem="Np4-9q-0wa" secondAttribute="top" id="849-BN-T9H"/>
+                                    <constraint firstAttribute="bottom" secondItem="6tc-Vp-Nz1" secondAttribute="bottom" id="9bf-5p-Hpk"/>
+                                    <constraint firstAttribute="width" secondItem="Np4-9q-0wa" secondAttribute="height" multiplier="1:1" id="A83-ji-OhX"/>
+                                    <constraint firstItem="6tc-Vp-Nz1" firstAttribute="leading" secondItem="Np4-9q-0wa" secondAttribute="leading" id="DVG-gy-NP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="6tc-Vp-Nz1" secondAttribute="trailing" id="sVY-Ff-F6q"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SVf-Hd-u3d" appends="YES" id="qBt-gV-om8"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-Nd-2Rk">
+                                <rect key="frame" x="17" y="32" width="22" height="22"/>
+                                <state key="normal" image="closeCameraButtonPDF"/>
+                                <connections>
+                                    <action selector="closeCamera:" destination="O9K-vL-FTJ" eventType="touchUpInside" id="eFa-8D-aWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-E0-9Jh">
+                                <rect key="frame" x="329" y="30" width="30" height="27"/>
+                                <state key="normal" image="changeCameraPDF"/>
+                                <connections>
+                                    <action selector="changeCamera:" destination="O9K-vL-FTJ" eventType="touchUpInside" id="MmJ-wo-h0n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-IK-Bhj">
+                                <rect key="frame" x="145" y="482" width="84" height="84"/>
+                                <state key="normal" image="cameraSnapPDF"/>
+                                <connections>
+                                    <action selector="snapStillImage:" destination="O9K-vL-FTJ" eventType="touchUpInside" id="UgT-90-d9f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-fh-H8u">
+                                <rect key="frame" x="17" y="619" width="100" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Фотоальбом">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoAlbumOpen:" destination="O9K-vL-FTJ" eventType="touchUpInside" id="v7a-Um-tYe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwx-Zf-ybl">
+                                <rect key="frame" x="296" y="620" width="63" height="32"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Дальше">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTouch:" destination="O9K-vL-FTJ" eventType="touchUpInside" id="sN9-jm-wfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aQr-Nd-2Rk" firstAttribute="leading" secondItem="Rom-XB-WDq" secondAttribute="leading" constant="17" id="0Sr-ii-cjB"/>
+                            <constraint firstItem="VIP-1x-foW" firstAttribute="top" secondItem="wSZ-fh-H8u" secondAttribute="bottom" constant="15" id="2to-AI-adA"/>
+                            <constraint firstAttribute="trailing" secondItem="BY9-E0-9Jh" secondAttribute="trailing" constant="16" id="Av6-r7-7Jr"/>
+                            <constraint firstItem="XJd-IK-Bhj" firstAttribute="centerX" secondItem="Rom-XB-WDq" secondAttribute="centerX" id="BMb-Rf-2hr"/>
+                            <constraint firstItem="U85-Bb-t19" firstAttribute="centerX" secondItem="Rom-XB-WDq" secondAttribute="centerX" id="G25-fI-kqu"/>
+                            <constraint firstItem="Np4-9q-0wa" firstAttribute="centerX" secondItem="Rom-XB-WDq" secondAttribute="centerX" id="K2S-h5-arE"/>
+                            <constraint firstItem="aQr-Nd-2Rk" firstAttribute="centerY" secondItem="U85-Bb-t19" secondAttribute="centerY" id="ZDS-Ad-9sC"/>
+                            <constraint firstItem="Np4-9q-0wa" firstAttribute="top" secondItem="U85-Bb-t19" secondAttribute="bottom" constant="12" id="e0R-33-Dh3"/>
+                            <constraint firstAttribute="trailing" secondItem="wwx-Zf-ybl" secondAttribute="trailing" constant="16" id="hdi-gk-Gon"/>
+                            <constraint firstItem="wSZ-fh-H8u" firstAttribute="leading" secondItem="Rom-XB-WDq" secondAttribute="leading" constant="17" id="iO4-DH-LWy"/>
+                            <constraint firstItem="U85-Bb-t19" firstAttribute="top" secondItem="Rom-XB-WDq" secondAttribute="top" constant="31" id="n8K-Pf-XIo"/>
+                            <constraint firstItem="Np4-9q-0wa" firstAttribute="width" secondItem="Rom-XB-WDq" secondAttribute="width" id="npx-5w-cMv"/>
+                            <constraint firstItem="BY9-E0-9Jh" firstAttribute="centerY" secondItem="U85-Bb-t19" secondAttribute="centerY" id="qS2-0S-9hh"/>
+                            <constraint firstItem="VIP-1x-foW" firstAttribute="top" secondItem="wwx-Zf-ybl" secondAttribute="bottom" constant="15" id="vdn-VQ-W3Q"/>
+                            <constraint firstItem="XJd-IK-Bhj" firstAttribute="top" secondItem="Np4-9q-0wa" secondAttribute="bottom" constant="40" id="ymu-wb-dkD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GwA-YE-ztD"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="XJd-IK-Bhj" id="lzk-w4-3E4"/>
+                        <outlet property="cameraTitleLabel" destination="U85-Bb-t19" id="S98-Ge-GzI"/>
+                        <outlet property="capturedImageView" destination="6tc-Vp-Nz1" id="EL6-qq-Shp"/>
+                        <outlet property="frameForCapture" destination="Np4-9q-0wa" id="4fk-bW-qo0"/>
+                        <outlet property="photoAlbumButton" destination="wSZ-fh-H8u" id="6ZR-TA-5t7"/>
+                        <outlet property="stillButton" destination="BY9-E0-9Jh" id="Io6-2g-krE"/>
+                        <segue destination="W9g-Af-hKr" kind="show" identifier="nextPhotoPost" id="UPO-Mr-r2l">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Juv-Ea-Hvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SVf-Hd-u3d">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="O9K-vL-FTJ" id="G1y-3c-WDD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3167" y="3045"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="pEB-KY-x1R">
+            <objects>
+                <viewController id="W9g-Af-hKr" customClass="IKKNPostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CRV-lQ-hVi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZqD-9x-svy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eAN-pv-P6W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0L-PT-RU9">
+                                <rect key="frame" x="114" y="0.0" width="371" height="371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O0L-PT-RU9" secondAttribute="height" multiplier="1:1" id="Sik-Jq-SDN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlW-sE-nQe" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-cG-ccj">
+                                        <rect key="frame" x="8" y="18" width="18" height="27"/>
+                                        <state key="normal" image="photoBack"/>
+                                        <connections>
+                                            <action selector="goBackTouch:" destination="W9g-Af-hKr" eventType="touchUpInside" id="Vee-Ma-w4k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="t2D-cG-ccj" firstAttribute="centerY" secondItem="jlW-sE-nQe" secondAttribute="centerY" id="DE0-tS-42k"/>
+                                    <constraint firstItem="t2D-cG-ccj" firstAttribute="leading" secondItem="jlW-sE-nQe" secondAttribute="leading" constant="8" id="ppi-ZZ-4zT"/>
+                                    <constraint firstAttribute="bottom" secondItem="t2D-cG-ccj" secondAttribute="bottom" constant="18" id="qtw-1n-OiQ"/>
+                                    <constraint firstItem="t2D-cG-ccj" firstAttribute="top" secondItem="jlW-sE-nQe" secondAttribute="top" constant="18" id="tIc-4P-NMV"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-mm-f6r">
+                                <rect key="frame" x="18" y="446" width="338" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="T39-TR-DZ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-4e-DD8" userLabel="Line">
+                                <rect key="frame" x="0.0" y="579" width="375" height="2"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="dX2-c5-meA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Добавить комментарий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UF-De-CHZ">
+                                <rect key="frame" x="109" y="554" width="155" height="17"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="583" width="156" height="17"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq9-Kz-Zrp">
+                                <rect key="frame" x="243" y="589" width="112" height="32"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Опубликовать">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.61960784310000006" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="143" y="67" width="114" height="32"/>
+                                </variation>
+                                <connections>
+                                    <action selector="publishTouch:" destination="W9g-Af-hKr" eventType="touchUpInside" id="ieP-6Q-oZN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qdu-mm-f6r" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="3cC-Ib-hZ7"/>
+                            <constraint firstItem="QxB-4e-DD8" firstAttribute="width" secondItem="eAN-pv-P6W" secondAttribute="width" id="8Iq-Dg-eux"/>
+                            <constraint firstItem="Qdu-mm-f6r" firstAttribute="width" secondItem="eAN-pv-P6W" secondAttribute="width" multiplier="0.9" id="AtI-lq-KSw"/>
+                            <constraint firstItem="jlW-sE-nQe" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="Fwf-Ww-0To"/>
+                            <constraint firstItem="Zq9-Kz-Zrp" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="W27-N3-H1y"/>
+                            <constraint firstItem="QxB-4e-DD8" firstAttribute="top" secondItem="9UF-De-CHZ" secondAttribute="bottom" constant="8" id="Xo6-eW-0FF"/>
+                            <constraint firstItem="9UF-De-CHZ" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="ads-xU-zki"/>
+                            <constraint firstItem="Zq9-Kz-Zrp" firstAttribute="top" secondItem="QxB-4e-DD8" secondAttribute="bottom" constant="8" id="boN-UZ-7sV"/>
+                            <constraint firstItem="ZqD-9x-svy" firstAttribute="top" secondItem="Zq9-Kz-Zrp" secondAttribute="bottom" constant="46" id="cye-wB-Oyg"/>
+                            <constraint firstItem="QxB-4e-DD8" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="eFH-6W-NCw"/>
+                            <constraint firstItem="O0L-PT-RU9" firstAttribute="width" secondItem="eAN-pv-P6W" secondAttribute="width" id="fMV-2m-anv"/>
+                            <constraint firstItem="jlW-sE-nQe" firstAttribute="top" secondItem="eAN-pv-P6W" secondAttribute="top" id="gwK-t9-wUo"/>
+                            <constraint firstItem="jlW-sE-nQe" firstAttribute="width" secondItem="eAN-pv-P6W" secondAttribute="width" id="ldV-lU-ndK"/>
+                            <constraint firstItem="Qdu-mm-f6r" firstAttribute="top" secondItem="O0L-PT-RU9" secondAttribute="bottom" constant="8" id="rOy-Lx-fqM"/>
+                            <constraint firstItem="O0L-PT-RU9" firstAttribute="top" secondItem="jlW-sE-nQe" secondAttribute="bottom" id="sDd-Bf-09d"/>
+                            <constraint firstItem="9UF-De-CHZ" firstAttribute="top" secondItem="Qdu-mm-f6r" secondAttribute="bottom" constant="8" id="w3p-fd-9x1"/>
+                            <constraint firstItem="O0L-PT-RU9" firstAttribute="centerX" secondItem="eAN-pv-P6W" secondAttribute="centerX" id="wKy-Af-6gK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextView" destination="Qdu-mm-f6r" id="ZvW-xp-IPw"/>
+                        <outlet property="postPhotoImageView" destination="O0L-PT-RU9" id="Gfb-Qv-oTJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pL6-Wx-2uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3573.5" y="3272.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cameraSnapPDF" width="84" height="84"/>
+        <image name="changeCameraPDF" width="30" height="27"/>
+        <image name="closeCameraButtonPDF" width="22" height="22"/>
+        <image name="photoBack" width="18" height="27"/>
+    </resources>
+</document>
