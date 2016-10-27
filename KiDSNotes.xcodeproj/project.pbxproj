@@ -242,12 +242,12 @@
 		3BEC21531D2117640006DED1 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC21521D2117640006DED1 /* RightMenuViewController.m */; };
 		3BEC21581D216A030006DED1 /* IKProfileSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC21571D216A030006DED1 /* IKProfileSettingsViewController.m */; };
 		3BF1932F1CE0E17B001E68C9 /* PhotoDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1932E1CE0E17B001E68C9 /* PhotoDetails.storyboard */; };
-		CD2AF777F583EBE1DF361F8E /* Pods_KiDSNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B5447D9F006A1D0AC92B9D /* Pods_KiDSNotes.framework */; };
+		669C36971B938954E0C804AC /* libPods-KiDSNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1553F1F20781F2FB2E602B1A /* libPods-KiDSNotes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02130A5AD754EAF374553B3B /* Pods-KiDSNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiDSNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KiDSNotes/Pods-KiDSNotes.debug.xcconfig"; sourceTree = "<group>"; };
-		14B5447D9F006A1D0AC92B9D /* Pods_KiDSNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiDSNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1553F1F20781F2FB2E602B1A /* libPods-KiDSNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiDSNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0D9C4B1C773C05003E6E91 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
 		3B0D9C4C1C773C05003E6E91 /* group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = group.m; sourceTree = "<group>"; };
 		3B0D9C4E1C773C15003E6E91 /* people.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 		3BD7A1421C5C072A001EAA0E /* IKFeedlineBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKFeedlineBottomView.h; sourceTree = "<group>"; };
 		3BD7A1431C5C072A001EAA0E /* IKFeedlineBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKFeedlineBottomView.m; sourceTree = "<group>"; };
 		3BD7A8961DB741DD00C5842B /* UserContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
-		3BD8F9291DA7B50600074089 /* KiDSNotes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KiDSNotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BD8F9291DA7B50600074089 /* KiDSNotes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KiDSNotes-Bridging-Header.h"; path = "../../KiDSNotes-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BD954BF1C206C420012FD39 /* KNFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFindFriendsViewController.h; sourceTree = "<group>"; };
 		3BD954C01C206C420012FD39 /* KNFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFindFriendsViewController.m; sourceTree = "<group>"; };
 		3BDE29671D363F6400AA10BC /* IKSettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKSettingsDataSource.h; sourceTree = "<group>"; };
@@ -658,7 +658,7 @@
 				3B3378151C0D9F0C00CAA5C5 /* AVFoundation.framework in Frameworks */,
 				3B3378131C0D9F0700CAA5C5 /* Foundation.framework in Frameworks */,
 				3BE9152B1C0C922200F4D406 /* CoreData.framework in Frameworks */,
-				CD2AF777F583EBE1DF361F8E /* Pods_KiDSNotes.framework in Frameworks */,
+				669C36971B938954E0C804AC /* libPods-KiDSNotes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,7 +693,6 @@
 		3B0F24B41BDE644800AF1C55 = {
 			isa = PBXGroup;
 			children = (
-				3BD8F9291DA7B50600074089 /* KiDSNotes-Bridging-Header.h */,
 				3BE089C71C62D42E00E1C7B3 /* PrefixHeader.pch */,
 				3B0F24BF1BDE644800AF1C55 /* KiDSNotes */,
 				3B0F24BE1BDE644800AF1C55 /* Products */,
@@ -1239,6 +1238,7 @@
 		3BA4F7F81BDECEF300742780 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BD8F9291DA7B50600074089 /* KiDSNotes-Bridging-Header.h */,
 				3B29074D1C4C13E200A76AB3 /* Library */,
 				3B0F2C111BDEE7B400B4AB75 /* Fonts */,
 				3BA4F7F91BDECF3800742780 /* menu.plist */,
@@ -1657,7 +1657,7 @@
 				3B3378141C0D9F0C00CAA5C5 /* AVFoundation.framework */,
 				3B3378121C0D9F0600CAA5C5 /* Foundation.framework */,
 				3BE9152A1C0C922200F4D406 /* CoreData.framework */,
-				14B5447D9F006A1D0AC92B9D /* Pods_KiDSNotes.framework */,
+				1553F1F20781F2FB2E602B1A /* libPods-KiDSNotes.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2095,6 +2095,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2135,6 +2136,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -2153,8 +2155,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VD4NY33JA6;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ECSlidingViewController",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KiDSNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2162,8 +2169,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KiDSNotes-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/\"/**";
 			};
 			name = Debug;
 		};
@@ -2177,8 +2186,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VD4NY33JA6;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ECSlidingViewController",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KiDSNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2186,8 +2200,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KiDSNotes-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/\"/**";
 			};
 			name = Release;
 		};

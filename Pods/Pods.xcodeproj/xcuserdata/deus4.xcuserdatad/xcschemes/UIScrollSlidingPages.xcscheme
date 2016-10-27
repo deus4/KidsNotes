@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '75FE334ECC3C0D082B73713545937BA9'
+               BlueprintIdentifier = '10AEF12F6C3C6126F62FFC278A76F33D'
                BlueprintName = 'UIScrollSlidingPages'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'UIScrollSlidingPages.framework'>
+               BuildableName = 'libUIScrollSlidingPages.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

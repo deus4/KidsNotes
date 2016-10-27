@@ -5,12 +5,12 @@
 # Install pods
 # pod install --no-doc
 #xcodeproj 'KiDSNotes'
-use_frameworks!
+#use_frameworks!
 
 target 'KiDSNotes' do
 # Backend
-pod 'Parse'
-pod 'ParseFacebookUtilsV4'
+pod 'Parse', '~> 1.14'
+pod 'ParseFacebookUtilsV4’
 pod 'ParseCrashReporting'
 pod 'ParseUI'
 

@@ -72,7 +72,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JSQMessagesViewController
   - JTCalendar
-  - Parse
+  - Parse (~> 1.14)
   - ParseCrashReporting
   - ParseFacebookUtilsV4
   - ParseUI
@@ -101,6 +101,6 @@ SPEC CHECKSUMS:
   UIImageEffects: 37b99fa461e4965f332ca82e92f2c22a1075ee84
   UIScrollSlidingPages: 92a3ed2c444b31f7f1b259f7b91720b53295346a
 
-PODFILE CHECKSUM: 8de01325b126d44390894f780d4437ab2213d956
+PODFILE CHECKSUM: 27b781be4d16277432fba51deb388175804f4d51
 
 COCOAPODS: 1.1.1
