@@ -10,7 +10,7 @@
 target 'KiDSNotes' do
 # Backend
 pod 'Parse', '~> 1.14'
-pod 'ParseFacebookUtilsV4’
+pod 'ParseFacebookUtilsV4'
 pod 'ParseCrashReporting'
 pod 'ParseUI'
 

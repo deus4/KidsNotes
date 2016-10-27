@@ -382,8 +382,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "passwordGeneration()"
-            landmarkType = "7">
+            landmarkName = "PasswordRecovery"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -424,8 +424,8 @@
                   symbolName = "KiDSNotes.SpringView.init (frame : __C.CGRect) -&gt; KiDSNotes.SpringView"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KiDSNotes%202/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499180860.440534"
+                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "499227349.600665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -439,8 +439,8 @@
                   symbolName = "KiDSNotes.SpringView.__allocating_init (frame : __C.CGRect) -&gt; KiDSNotes.SpringView"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KiDSNotes%202/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499180860.443608"
+                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "499227349.603108"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -454,8 +454,8 @@
                   symbolName = "KiDSNotes.SpringView.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;KiDSNotes.SpringView&gt;"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KiDSNotes%202/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499180860.448364"
+                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "499227349.605363"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
