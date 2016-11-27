@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5tC-Yu-mVk">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5tC-Yu-mVk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,38 +32,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRZ-Iv-vi2">
+                                <rect key="frame" x="17" y="469" width="42" height="29"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
                                 <state key="normal" title="Выйти">
                                     <color key="titleColor" red="0.011764705882352941" green="0.62745098039215685" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7i-6u-OoN">
+                                <rect key="frame" x="0.0" y="459" width="375" height="1"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.88627450980392153" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fnK-RH-ufp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifa-IX-JYQ">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hnf-un-fGV" customClass="PFImageView">
+                                        <rect key="frame" x="342" y="5" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="IlI-3G-7gX"/>
                                             <constraint firstAttribute="width" constant="30" id="wFd-Ji-qKW"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-MK-Wl6">
+                                        <rect key="frame" x="172.5" y="8" width="30" height="24"/>
                                         <state key="normal" image="settingsCameraButton"/>
                                         <connections>
                                             <segue destination="Kn0-kY-NE6" kind="show" id="dPQ-cS-qdY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-ET-GCh">
+                                        <rect key="frame" x="14" y="9" width="20" height="22"/>
                                         <state key="normal" image="feedlineSettingsButton"/>
                                         <connections>
                                             <segue destination="ZTZ-f6-BTf" kind="show" id="vjU-PD-E2H"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFD-jb-l0L">
+                                        <rect key="frame" x="322" y="-5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="WJ2-ZY-5R8"/>
                                             <constraint firstAttribute="width" constant="50" id="yve-TX-nGf"/>
@@ -84,6 +94,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="36" sectionHeaderHeight="40" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-Z2-uQO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="395"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="395" id="TEk-C0-CZR"/>
@@ -93,18 +104,21 @@
                                         <rect key="frame" x="0.0" y="40" width="375" height="36"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2do-wn-DxE" id="xhW-VT-0Gx">
-                                            <frame key="frameInset" width="375" height="36"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Gzr-Az-SMn">
+                                                    <rect key="frame" x="17" y="8" width="300" height="20"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DAV-Hc-5fu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="e91-bu-khW"/>
                                                                 <constraint firstAttribute="height" constant="20" id="tkC-0u-Z1W"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecu-Tt-WYo">
+                                                            <rect key="frame" x="35" y="0.0" width="265" height="20"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -115,12 +129,15 @@
                                                     </constraints>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81t-bM-8ae">
+                                                    <rect key="frame" x="352" y="7" width="10" height="22"/>
                                                     <state key="normal" image="proceedSettingsButton"/>
                                                 </button>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffr-Xy-snX">
+                                                    <rect key="frame" x="313" y="2.5" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.011764705882352941" green="0.62745098039215685" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBW-ow-eoz">
+                                                    <rect key="frame" x="52" y="35" width="261" height="1"/>
                                                     <color key="backgroundColor" red="0.89803921568627454" green="0.88627450980392153" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="Geq-eC-z75"/>
@@ -198,17 +215,23 @@
                         <viewControllerLayoutGuide type="bottom" id="Yh7-m8-ITb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vPL-ES-8G6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="466"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-iL-Af9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="466"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYc-Xt-m0b">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="602"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-6r-6Qg">
+                                                <rect key="frame" x="162" y="13" width="90" height="90"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iCC-CJ-iXc" customClass="PFImageView"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iCC-CJ-iXc" customClass="PFImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F37-Iv-08Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <state key="normal" image="avatarAddButton"/>
                                                         <connections>
                                                             <action selector="addAvatarAction:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="ocq-8F-1Or"/>
@@ -231,30 +254,38 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Em-If-Lls">
+                                                <rect key="frame" x="33" y="157" width="347" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="iM7-u5-PLW"/>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQo-4n-Ipw">
+                                                <rect key="frame" x="34" y="139" width="347" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSb-dD-pfO">
+                                                <rect key="frame" x="34" y="194" width="347" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIm-xT-eKu">
+                                                <rect key="frame" x="34" y="249" width="347" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-YW-e1M" userLabel="firstChild">
+                                                <rect key="frame" x="33" y="294" width="40" height="40"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2FW-8o-piv" customClass="PFImageView"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2FW-8o-piv" customClass="PFImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    </imageView>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcY-hC-3Lj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <state key="normal" image="kidsAddButton"/>
                                                         <connections>
                                                             <action selector="addAvatarAction:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="WvV-CB-R8D"/>
@@ -276,11 +307,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить фото и имя ребенка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgI-0w-FNW">
+                                                <rect key="frame" x="123.5" y="280" width="167" height="14"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-MI-y2b">
+                                                <rect key="frame" x="170" y="509" width="75" height="30"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <state key="normal" title="Сохранить">
                                                     <color key="titleColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -289,30 +322,38 @@
                                                     <action selector="saveUserProfileSettings:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="0Pg-o8-c2N"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-y0-i16">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите имя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-y0-i16">
+                                                <rect key="frame" x="88" y="316" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-L0-M56">
+                                                <rect key="frame" x="88" y="366" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjN-e6-BKD">
+                                                <rect key="frame" x="88" y="416" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-Vm-jgo">
+                                                <rect key="frame" x="88" y="466" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqW-j6-F3o" userLabel="secondChild">
+                                                <rect key="frame" x="33" y="344" width="40" height="40"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="alH-qU-PhS" customClass="PFImageView"/>
+                                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="alH-qU-PhS" customClass="PFImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    </imageView>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3R-Gu-BrN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <state key="normal" image="kidsAddButton"/>
                                                         <connections>
                                                             <action selector="addAvatarAction:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="GoU-1H-Eqk"/>
@@ -334,9 +375,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-VO-jrB" userLabel="forthChild">
+                                                <rect key="frame" x="33" y="444" width="40" height="40"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-Wx-QFn" customClass="PFImageView"/>
+                                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-Wx-QFn" customClass="PFImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    </imageView>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko8-Dn-m4O">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <state key="normal" image="kidsAddButton"/>
                                                         <connections>
                                                             <action selector="addAvatarAction:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="h4l-n1-qDt"/>
@@ -358,55 +403,67 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-pO-0L9">
+                                                <rect key="frame" x="88" y="484" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="lDh-7R-d1m"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-jp-tKz">
+                                                <rect key="frame" x="88" y="383" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="8jU-S1-ch1"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyX-eN-a2s">
+                                                <rect key="frame" x="33" y="212" width="347" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="MWb-mJ-icj"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ИМЯ И ФАМИЛИЯ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-Tm-3F3">
+                                                <rect key="frame" x="33" y="118" width="84" height="12"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="10"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-Cc-7yJ">
+                                                <rect key="frame" x="88" y="334" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="HcQ-jZ-iTz"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tw-NG-jNb">
+                                                <rect key="frame" x="34" y="267" width="347" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="3p6-UQ-DfI"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYT-Yn-pQL">
+                                                <rect key="frame" x="88" y="434" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="r2l-NS-epC"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГОРОД" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-O6-W1d">
+                                                <rect key="frame" x="33" y="167" width="32" height="12"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="10"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiE-Ga-ds7" userLabel="thirdChild">
+                                                <rect key="frame" x="33" y="394" width="40" height="40"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mG7-X7-Ghl" customClass="PFImageView"/>
+                                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mG7-X7-Ghl" customClass="PFImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    </imageView>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBu-rf-1Yn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <state key="normal" image="kidsAddButton"/>
                                                         <connections>
                                                             <action selector="addAvatarAction:" destination="6Q8-gR-bRL" eventType="touchUpInside" id="fIW-BW-p2X"/>
@@ -428,10 +485,39 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-5n-ghF">
+                                                <rect key="frame" x="33" y="222" width="29" height="12"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="10"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Дата рождения" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PsM-br-QoM">
+                                                <rect key="frame" x="245" y="310" width="135" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i1-vB-33S">
+                                                <rect key="frame" x="245" y="360" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gu7-O4-dGV">
+                                                <rect key="frame" x="245" y="411" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-9U-tFZ">
+                                                <rect key="frame" x="245" y="460" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -537,13 +623,17 @@
                     <connections>
                         <outlet property="displayNameTextField" destination="lQo-4n-Ipw" id="qsG-sX-hz5"/>
                         <outlet property="emailTextField" destination="CIm-xT-eKu" id="AfY-mJ-6E3"/>
+                        <outlet property="firstChildBirthdayTextField" destination="PsM-br-QoM" id="woX-pH-Fa1"/>
                         <outlet property="firstChildImageView" destination="2FW-8o-piv" id="091-dh-MYC"/>
                         <outlet property="firstChildTextField" destination="Irr-y0-i16" id="T3y-O6-jJk"/>
+                        <outlet property="forthChildBirthdayTextField" destination="wOU-9U-tFZ" id="Rel-Bh-BpF"/>
                         <outlet property="forthChildImageView" destination="IZa-Wx-QFn" id="pVI-o2-4Kr"/>
                         <outlet property="forthChildTextField" destination="t0X-Vm-jgo" id="IVO-q8-t2S"/>
                         <outlet property="profilePictureView" destination="dTn-6r-6Qg" id="4xq-fZ-z0W"/>
+                        <outlet property="secondChildBirthdayTextField" destination="7i1-vB-33S" id="YWO-pF-Q4a"/>
                         <outlet property="secondChildImageView" destination="alH-qU-PhS" id="52t-vh-a7K"/>
                         <outlet property="secondChildTextField" destination="kbW-L0-M56" id="MOj-bb-XVN"/>
+                        <outlet property="thirdChildBirthdayTextField" destination="gu7-O4-dGV" id="dfB-0D-fOt"/>
                         <outlet property="thirdChildImageView" destination="mG7-X7-Ghl" id="DzU-Km-o2o"/>
                         <outlet property="thirdChildTextField" destination="MjN-e6-BKD" id="pf3-8V-bY3"/>
                         <outlet property="townTextField" destination="NSb-dD-pfO" id="0gO-dT-P9A"/>
@@ -560,11 +650,15 @@
                         <outletCollection property="childrenNameTextFieldCollection" destination="kbW-L0-M56" id="hf4-ue-lPv"/>
                         <outletCollection property="childrenViewCollection" destination="JiE-Ga-ds7" id="hrR-46-dPW"/>
                         <outletCollection property="childrenImageViewCollection" destination="mG7-X7-Ghl" id="4lu-AL-nWV"/>
+                        <outletCollection property="childrenBirthdayCollection" destination="PsM-br-QoM" id="zwk-m9-f3O"/>
+                        <outletCollection property="childrenBirthdayCollection" destination="7i1-vB-33S" id="8Cw-ee-Pco"/>
+                        <outletCollection property="childrenBirthdayCollection" destination="gu7-O4-dGV" id="QPa-du-5uT"/>
+                        <outletCollection property="childrenBirthdayCollection" destination="wOU-9U-tFZ" id="w89-Pr-ask"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MA-tb-gHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508.5" y="808.5"/>
+            <point key="canvasLocation" x="1507.2" y="807.79610194902557"/>
         </scene>
         <!--Account-->
         <scene sceneID="5B7-53-Kfu">
@@ -587,7 +681,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNe-LJ-tQD">
-                                <frame key="frameInset" minY="141" width="414" height="466"/>
+                                <rect key="frame" x="0.0" y="141" width="414" height="466"/>
                                 <connections>
                                     <segue destination="6Q8-gR-bRL" kind="embed" id="eXt-z5-D8W"/>
                                 </connections>
@@ -663,6 +757,6 @@
         <image name="settingsCameraButton" width="30" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XDO-Vn-qiR"/>
+        <segue reference="eXt-z5-D8W"/>
     </inferredMetricsTieBreakers>
 </document>

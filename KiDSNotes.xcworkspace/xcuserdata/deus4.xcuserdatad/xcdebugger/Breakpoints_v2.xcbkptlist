@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KiDSNotes/Classes/Controllers/IKProfileSettingsViewController.m"
-            timestampString = "490814202.558986"
+            timestampString = "501961422.548335"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "426"
-            endingLineNumber = "426"
+            startingLineNumber = "445"
+            endingLineNumber = "445"
             landmarkName = "-saveUserProfileSettings:"
             landmarkType = "7">
          </BreakpointContent>
@@ -424,8 +424,8 @@
                   symbolName = "KiDSNotes.SpringView.init (frame : __C.CGRect) -&gt; KiDSNotes.SpringView"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499227349.600665"
+                  urlString = "file:///Users/deus4/Documents/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "501961986.942627"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -439,8 +439,8 @@
                   symbolName = "KiDSNotes.SpringView.__allocating_init (frame : __C.CGRect) -&gt; KiDSNotes.SpringView"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499227349.603108"
+                  urlString = "file:///Users/deus4/Documents/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "501961986.945479"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -454,8 +454,8 @@
                   symbolName = "KiDSNotes.SpringView.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;KiDSNotes.SpringView&gt;"
                   moduleName = "KiDSNotes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/deus4/Desktop/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
-                  timestampString = "499227349.605363"
+                  urlString = "file:///Users/deus4/Documents/KidsNotes/KiDSNotes/Classes/Spring/SpringView.swift"
+                  timestampString = "501961986.94864"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -524,6 +524,22 @@
             startingLineNumber = "94"
             endingLineNumber = "94"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KiDSNotes/Classes/Controllers/IKProfileSettingsViewController.m"
+            timestampString = "501961422.548335"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-loadChildrens"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

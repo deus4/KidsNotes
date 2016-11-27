@@ -10,6 +10,7 @@
 #import "Parse.h"
 #import "UIImage+ResizeAdditions.h"
 #import "ProgressHUD.h"
+#import "TTTTimeintervalFormatter.h"
 
 @interface IKProfileSettingsViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet PFImageView *userProfileImageView;
@@ -41,10 +42,18 @@
 @property (strong, nonatomic) NSMutableArray *childrenArray;
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *childrenNameTextFieldCollection;
 
+@property (strong, nonatomic) IBOutlet UITextField *firstChildBirthdayTextField;
+@property (strong, nonatomic) IBOutlet UITextField *secondChildBirthdayTextField;
+@property (strong, nonatomic) IBOutlet UITextField *thirdChildBirthdayTextField;
+@property (strong, nonatomic) IBOutlet UITextField *forthChildBirthdayTextField;
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *childrenBirthdayCollection;
+
+@property (nonatomic, strong) TTTTimeIntervalFormatter *timeIntervalFormatter;
 
 @end
 
 @implementation IKProfileSettingsViewController
+@synthesize timeIntervalFormatter;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,6 +76,7 @@
     self.townTextField.text = [self.currentUser objectForKey:@"city"];
     self.emailTextField.text = [self.currentUser objectForKey:@"email"];
     self.passwordTextField.text = [self.currentUser objectForKey:@"password"];
+    self.timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc]init];
     [self loadChildrens];
 }
 - (void)loadChildrens {
@@ -82,8 +92,19 @@
                 int childId = [[object valueForKey:@"id"] intValue];
                 for (UITextField *textField in self.childrenNameTextFieldCollection) {
                     if ( childId == textField.tag) {
-                        
-                        textField.text = [object objectForKey:@"name"];                    }
+                        textField.text = [object objectForKey:@"name"];
+                    }
+                }
+                
+                NSTimeInterval timeInterval = [[object objectForKey:@"Birthday"] timeIntervalSinceNow];
+                NSString *timestamp = [self.timeIntervalFormatter stringForTimeInterval:timeInterval];
+                
+                
+                for (UITextField *textField in self.childrenBirthdayCollection) {
+                    if ( childId == textField.tag) {
+                        //textField.text = [NSString stringWithFormat:@"%.4f", timeInterval];
+                        [textField setText:timestamp];
+                    }
                 }
                 for (PFImageView *imageView in self.childrenImageViewCollection) {
                     if (childId == imageView.tag)   {
