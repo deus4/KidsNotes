@@ -56,7 +56,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-MK-Wl6">
-                                        <rect key="frame" x="172.5" y="8" width="30" height="24"/>
+                                        <rect key="frame" x="173" y="8" width="30" height="24"/>
                                         <state key="normal" image="settingsCameraButton"/>
                                         <connections>
                                             <segue destination="Kn0-kY-NE6" kind="show" id="dPQ-cS-qdY"/>
@@ -133,7 +133,7 @@
                                                     <state key="normal" image="proceedSettingsButton"/>
                                                 </button>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffr-Xy-snX">
-                                                    <rect key="frame" x="313" y="2.5" width="51" height="31"/>
+                                                    <rect key="frame" x="313" y="3" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.011764705882352941" green="0.62745098039215685" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBW-ow-eoz">
@@ -222,7 +222,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="466"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYc-Xt-m0b">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="602"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="603"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-6r-6Qg">
                                                 <rect key="frame" x="162" y="13" width="90" height="90"/>
@@ -279,7 +279,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-YW-e1M" userLabel="firstChild">
-                                                <rect key="frame" x="33" y="294" width="40" height="40"/>
+                                                <rect key="frame" x="33" y="295" width="40" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2FW-8o-piv" customClass="PFImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -307,13 +307,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить фото и имя ребенка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgI-0w-FNW">
-                                                <rect key="frame" x="123.5" y="280" width="167" height="14"/>
+                                                <rect key="frame" x="124" y="280" width="167" height="15"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-MI-y2b">
-                                                <rect key="frame" x="170" y="509" width="75" height="30"/>
+                                                <rect key="frame" x="170" y="510" width="75" height="30"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <state key="normal" title="Сохранить">
                                                     <color key="titleColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -323,31 +323,31 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите имя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-y0-i16">
-                                                <rect key="frame" x="88" y="316" width="292" height="18"/>
+                                                <rect key="frame" x="88" y="317" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-L0-M56">
-                                                <rect key="frame" x="88" y="366" width="292" height="18"/>
+                                                <rect key="frame" x="88" y="367" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjN-e6-BKD">
-                                                <rect key="frame" x="88" y="416" width="292" height="18"/>
+                                                <rect key="frame" x="88" y="417" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-Vm-jgo">
-                                                <rect key="frame" x="88" y="466" width="292" height="18"/>
+                                                <rect key="frame" x="88" y="467" width="292" height="18"/>
                                                 <color key="textColor" red="0.043137254901960784" green="0.62352941176470589" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqW-j6-F3o" userLabel="secondChild">
-                                                <rect key="frame" x="33" y="344" width="40" height="40"/>
+                                                <rect key="frame" x="33" y="345" width="40" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="alH-qU-PhS" customClass="PFImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -375,7 +375,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-VO-jrB" userLabel="forthChild">
-                                                <rect key="frame" x="33" y="444" width="40" height="40"/>
+                                                <rect key="frame" x="33" y="445" width="40" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-Wx-QFn" customClass="PFImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -403,14 +403,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-pO-0L9">
-                                                <rect key="frame" x="88" y="484" width="292" height="1"/>
+                                                <rect key="frame" x="88" y="485" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="lDh-7R-d1m"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-jp-tKz">
-                                                <rect key="frame" x="88" y="383" width="292" height="1"/>
+                                                <rect key="frame" x="88" y="384" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="8jU-S1-ch1"/>
@@ -430,7 +430,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-Cc-7yJ">
-                                                <rect key="frame" x="88" y="334" width="292" height="1"/>
+                                                <rect key="frame" x="88" y="335" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="HcQ-jZ-iTz"/>
@@ -444,7 +444,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYT-Yn-pQL">
-                                                <rect key="frame" x="88" y="434" width="292" height="1"/>
+                                                <rect key="frame" x="88" y="435" width="292" height="1"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="r2l-NS-epC"/>
@@ -457,7 +457,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiE-Ga-ds7" userLabel="thirdChild">
-                                                <rect key="frame" x="33" y="394" width="40" height="40"/>
+                                                <rect key="frame" x="33" y="395" width="40" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mG7-X7-Ghl" customClass="PFImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>

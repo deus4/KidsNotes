@@ -56,7 +56,6 @@
     }
     return self;
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.estimatedRowHeight = 350.0;
@@ -74,7 +73,7 @@
         if (self.numberOfPages > 0) {
             feedLineController.blankTimelineView.hidden = YES;
         } else {
-            feedLineController.blankTimelineView.hidden = NO;
+            feedLineController.blankTimelineView.hidden = YES;
         }
     }
     
@@ -123,8 +122,12 @@
     }
     // Query for the friends the current user is following
     PFQuery *followingActivitiesQuery = [PFQuery queryWithClassName:kPAPActivityClassKey];
-    [followingActivitiesQuery whereKey:kPAPActivityTypeKey equalTo:kPAPActivityTypeFollow];
-    [followingActivitiesQuery whereKey:kPAPActivityFromUserKey equalTo:[PFUser currentUser]];
+    
+    if (self.numberOfPages > 0) { //If true, return records only from friends, if false - from all others.
+        [followingActivitiesQuery whereKey:kPAPActivityTypeKey equalTo:kPAPActivityTypeFollow];
+        [followingActivitiesQuery whereKey:kPAPActivityFromUserKey equalTo:[PFUser currentUser]];
+    }
+    
     followingActivitiesQuery.cachePolicy = kPFCachePolicyNetworkOnly;
     followingActivitiesQuery.limit = 1000;
     
